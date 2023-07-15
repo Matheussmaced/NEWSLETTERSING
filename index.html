@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@300;400;700&family=Hanken+Grotesk:wght@800&family=Inter:wght@300;500&family=Lexend+Deca&family=Montserrat:ital,wght@0,300;0,500;1,500&family=Open+Sans:wght@300;400&family=Outfit:wght@200;300;800&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,800&family=Red+Hat+Display:wght@300;400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>NEWSLETTER SING</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="imgMobile" class=""></div>
+    <div id="container-master" class=""> <!--Adicionar class hide quando enviado o form-->
+      <div id="informations">
+        <div id="title">
+          <h1>Stay updated!</h1>
+          <p id="pTitle">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+        </div>
+
+        <div id="benefits1">
+          <img class="ok" src="assets/img/icon-list.svg" alt="Ok" />
+          <p>Product discovery and building what matters</p>
+        </div>
+
+        <div id="benefits2">
+          <img class="ok" src="assets/img/icon-list.svg" alt="Ok" />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+
+        <div id="benefits3">
+          <img class="ok"src="assets/img/icon-list.svg" alt="Ok" />
+          <p>And much more!</p>
+        </div>
+
+        <div id="form">
+          <form>
+            <div id="h6Form">
+                <h6>Email address</h6>
+                <div class="errorDiv" id="errorDiv"> <!--Remover a classe errorDiv com jS-->
+                    <h6 class="error" id="errorH6">Valid email required</h6> 
+                </div>
+            </div>
+
+            <input class="" id="inputUsuario" type="text" placeholder="email@company.com" /> <!--Adicionar error com JS-->
+            <div id="submit">
+              <button id="submit" type="submit">Subscribe to monthly newsletter</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="banner">
+        <img
+          id="ilustration"
+          src="assets/img/illustration-sign-up-desktop.svg"
+          alt="banner"
+        />
+      </div>
+    </div>
+
+    <div id="container-child" class="hide"> <!--remover quando enviar o form-->
+
+        <img id="imgHide" src="assets/img/icon-success.svg" alt="">
+        <h1 id="h1Hide">Thanks for subscribing!</h1>
+        <p id="pHide"></p>
+        <button id="btnHide" type="submit">Dismiss message</button>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

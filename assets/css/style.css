@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark_Slate_Grey: hsl(234, 29%, 20%); 
+    --Charcoal_Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Charcoal_Grey);
+}
+
+#container-master{
+    display: flex;
+    align-items: center;
+    width: 750px;
+    border: solid black 1px;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    background-color: var(--White);
+}
+
+#informations{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+#benefits1, #benefits2, #benefits3{
+    display: flex;
+    align-items: center;
+    grid-gap: .7rem;
+    margin-top: 1rem;
+}
+
+/*imgs*/
+
+#ilustration{
+    width: 290px;
+    border-radius: 10px;
+}
+
+.ok{
+    width: 17px;
+}
+
+/*texts*/
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Grey);
+}
+
+#pTitle{
+    margin-top: 1rem;
+    width: 90%;
+    line-height: 1.7;
+} 
+
+h1{
+    font-size: 47px;
+    color: var(--Dark_Slate_Grey);
+    margin-top: 1rem;
+}
+
+h6{
+    margin-bottom: .5rem;
+}
+
+
+/*inputs*/
+
+#form{
+    margin-top: 2rem;
+}
+
+input{
+    padding: .7rem;
+    width: 85%;
+    border-radius: 5px;
+    border: solid var(--Grey) 1px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+button{
+        padding: .7rem;
+        width: 85%;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--Dark_Slate_Grey);
+        color: var(--White);
+        margin-bottom: 1rem;
+        cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--Tomato);
+}
+
+#submit{
+    margin-top: 1rem;
+}
+
+
+
+
+/*JS TOGGLE*/
+
+/*Input*/
+.error{
+    background-color: hsl(4, 100%, 94%);
+    color: var(--Tomato);
+    border: solid var(--Tomato) 1px;
+}
+
+.error::placeholder{
+    color: var(--Tomato);
+}
+
+#h6Form{
+    display: flex;
+}
+
+h6.error{
+    background-color: var(--White);
+    border: none;
+    margin-left: 10.3rem;
+}
+
+.errorDiv{
+    display: none;
+}
+
+
+/*container Master*/
+
+.hide{
+    display: none !important;
+}
+
+#container-child{
+    background-color: var(--White);
+    width: 430px;
+    padding: 2.5rem 3rem 2rem 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+}
+
+#result{
+    font-weight: 700;
+}
+
+#h1Hide{
+    line-height: 1;
+    font-size: 45px;
+}
+
+#pHide{
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.5;
+    color: var(--Dark_Slate_Grey);
+}
+
+#imgHide{
+    width: 52px;
+}
+
+#btnHide{
+    width: 100%;
+
+}
+
+
+/*MOBILE*/
+
+@media(max-width: 757px){
+
+    body{
+        background-color: var(--White);
+    }
+
+    #container-master{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: solid black 1px;
+        padding: 0;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 0px;
+        background-color: var(--White);
+        border: none;
+    }
+
+    #ilustration{
+        display: none;
+    }
+
+    #imgMobile{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        height: 250px;
+        background-image: url(/assets/img/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .ok{
+        width: 20px;
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--Grey);
+    }
+
+    #benefits1, #benefits2, #benefits3{
+        display: flex;
+        align-items: center;
+        grid-gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    input{
+        padding: 1rem;
+        width: 92%;
+        border-radius: 5px;
+        border: solid var(--Grey) 1px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    
+    button{
+            padding: 1rem;
+            width: 92%;
+            border-radius: 5px;
+            border: none;
+            background-color: var(--Dark_Slate_Grey);
+            color: var(--White);
+            margin-bottom: 0;
+            cursor: pointer;
+    }
+
+    #submit{
+        margin-top: .7rem;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    /*Final Screen*/
+
+    #container-child{
+        background-color: var(--White);
+        width: 85%;
+        padding: 0;
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 30px;
+    }
+
+    #btnHide{
+        width: 100%;
+        margin-top: 15rem;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    #imgHide{
+        width: 60px;
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+
+
+
+
+
+
